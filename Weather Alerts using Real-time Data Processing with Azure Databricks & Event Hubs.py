@@ -1,38 +1,3 @@
-# Databricks notebook source
-# MAGIC %md
-# MAGIC # Weather Alerts using Real-time Data Processing with Azure Databricks (and Event Hubs)
-# MAGIC
-# MAGIC This notebook demonstrates a real-time data processing workflow in Databricks using Structured Streaming to ingest data from Event Hubs. Designed a Bronze-Silver-Gold architecture to refine and transform data to find the weather conditions, with an automated email alert to notify stakeholders of the top results.
-# MAGIC
-# MAGIC - Data Sources: Streaming data from IoT devices or social media feeds. (Simulated in Event Hubs)
-# MAGIC - Ingestion: Azure Event Hubs for capturing real-time data.
-# MAGIC - Processing: Azure Databricks for stream processing using Structured Streaming.
-# MAGIC - Storage: Processed data stored Azure Data Lake (Delta Format).
-# MAGIC
-# MAGIC ### Azure Services Required
-# MAGIC - Databricks Workspace
-# MAGIC - Azure Data Lake Storage
-# MAGIC - Azure Event Hub
-# MAGIC
-# MAGIC ### Azure Databricks Configuration Required
-# MAGIC - Single Node Compute Cluster: `12.2 LTS (includes Apache Spark 3.3.2, Scala 2.12)`
-# MAGIC - Maven Library installed on Compute Cluster: `com.microsoft.azure:azure-eventhubs-spark_2.12:2.3.22`
-
-# COMMAND ----------
-
-# MAGIC %md
-# MAGIC ## Sample Data:  
-# MAGIC ###     {
-# MAGIC ###     "temperature": 40,  
-# MAGIC ###     "humidity": 20,  
-# MAGIC ###     "windSpeed": 10,   
-# MAGIC ###     "windDirection": "NW",  
-# MAGIC ###     "precipitation": 0,  
-# MAGIC ###     "conditions": "Partly Cloudy"  
-# MAGIC ### }
-# MAGIC
-# MAGIC
-
 # COMMAND ----------
 
 # MAGIC %md
@@ -125,8 +90,8 @@ df_bronze.display()
 
 # COMMAND ----------
 
-# MAGIC %sql
-# MAGIC SELECT * FROM hive_metastore.bronze.weather;
+  %sql
+  SELECT * FROM hive_metastore.bronze.weather;
 # MAGIC
 
 # COMMAND ----------
@@ -188,8 +153,8 @@ display(df_silver)
 
 # COMMAND ----------
 
-# MAGIC %sql
-# MAGIC SELECT * FROM hive_metastore.silver.weather;
+  %sql
+  SELECT * FROM hive_metastore.silver.weather;
 # MAGIC
 
 # COMMAND ----------
@@ -237,8 +202,8 @@ df_gold.display()
 
 # COMMAND ----------
 
-# MAGIC %sql
-# MAGIC select* from hive_metastore.gold.weather_summary
+  %sql
+  select* from hive_metastore.gold.weather_summary
 
 # COMMAND ----------
 
