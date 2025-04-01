@@ -1,0 +1,9 @@
+Sample Data:
+{
+"temperature": 40,
+"humidity": 20,
+"windSpeed": 10,
+"windDirection": "NW",
+"precipitation": 0,
+"conditions": "Partly Cloudy"
+}
