@@ -1,5 +1,5 @@
-⛈️ Weather Alerts using Real-time Data Processing with Azure Databricks & Event Hubs
-🚀 Overview
+⛈️ Weather Alerts using Real-time Data Processing with Azure Databricks & Event Hubs<br>
+🚀 Overview<br>
 This project showcases a real-time weather alert system leveraging Azure Databricks, Event Hubs, and Structured Streaming. It processes live weather data, detects anomalies, and triggers alerts for extreme conditions.
 
 🔹 Tech Stack:
@@ -20,7 +20,7 @@ Python (for scripting and analytics)
 ✔️ Automated weather alerts ⚠️<br>
 ✔️ Scalable & cloud-native solution ☁️<br>
 
-📢 How to Use:
+📢 How to Use:<br>
 1️⃣ Set up Azure Event Hubs and configure your event stream.<br>
 2️⃣ Deploy Databricks notebooks and configure Structured Streaming.<br>
 3️⃣ Monitor weather conditions & receive alerts in real time!<br>
