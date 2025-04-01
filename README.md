@@ -15,12 +15,12 @@ Apache Spark (for big data processing)
 Python (for scripting and analytics)
 
 📌 Features:
-✔️ Real-time weather data ingestion 🌍
-✔️ Data transformation & anomaly detection 📊
-✔️ Automated weather alerts ⚠️
-✔️ Scalable & cloud-native solution ☁️
+✔️ Real-time weather data ingestion 🌍<br>
+✔️ Data transformation & anomaly detection 📊<br>
+✔️ Automated weather alerts ⚠️<br>
+✔️ Scalable & cloud-native solution ☁️<br>
 
 📢 How to Use:
-1️⃣ Set up Azure Event Hubs and configure your event stream.
-2️⃣ Deploy Databricks notebooks and configure Structured Streaming.
-3️⃣ Monitor weather conditions & receive alerts in real time!
+1️⃣ Set up Azure Event Hubs and configure your event stream.<br>
+2️⃣ Deploy Databricks notebooks and configure Structured Streaming.<br>
+3️⃣ Monitor weather conditions & receive alerts in real time!<br>
