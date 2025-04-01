@@ -14,7 +14,7 @@ Apache Spark (for big data processing)
 
 Python (for scripting and analytics)
 
-📌 Features:
+📌 Features:<br>
 ✔️ Real-time weather data ingestion 🌍<br>
 ✔️ Data transformation & anomaly detection 📊<br>
 ✔️ Automated weather alerts ⚠️<br>
